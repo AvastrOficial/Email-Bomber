@@ -1,0 +1,65 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Correo smtp</title>
+
+</head>
+<body>
+    <div class="header">Spam Gmail</div>
+    <div class="nav">
+          <a href="#descripcion" onclick="showSection(event, 'descripcion')">Que ES?</a>
+        <a href="#blog" onclick="showSection(event, 'blog')">informacion</a>
+        <a href="#info" onclick="showSection(event, 'info')">Como Evitarlo?</a>
+        <a href="#contacto" onclick="showSection(event, 'contacto')">Redes Sociales</a>
+        <button onclick="openSpamMenu()">Spam Menu</button>
+    </div>
+    <div class="container">
+        <div id="descripcion" class="section active">
+            <h2>Que Es Spam Bsz Correo</h2>
+            <p>Herramienta para spamear correos electrónicos creada con Js y SMTP, se necesita un correo electrónico de Outlook para poder usar la herramienta, no me hago responsable del mal uso que se le pueda dar..</p>
+        </div>
+        <div id="blog" class="section">
+            <h2>Informacion</h2>
+            <p>Esta herramienta necesita un correo electrónico personal para poder usarse para spamear, si en algún momento enviando mensajes llega a dar error revise su bandeja de entrada del email para asegurarse de que no le hayan limitado por enviar demasiados mensajes. ( Esta herramienta no roba ninguna información está creada con el fin de poder spamear una bandeja de email para poder saturarla )</p>
+        </div>
+        <div id="info" class="section">
+            <h2>Como Evitarlo</h2>
+            <p>Ovbiamente si mandamos mucha cantidad de mensajes es posible que Gmail lleve los mensajes para spam por eso para poder evitar que lleguen a spam tenemos que poner un sujeto y un mensaje algo largo para que lleguen bien..</p>
+        </div>
+        <div id="contacto" class="section">
+            <h2>Redes Sociales</h2>
+             <div class="social-icons">
+      <a href="https://github.com/AvastrOficial"><img src="https://th.bing.com/th/id/OIP.saZ1ZkS5sHDzRrd8GHUUAAHaHa?rs=1&pid=ImgDetMain" alt="GitHub"></a>
+      <a href="https://t.me/BSZ_VENTAS"><img src="https://th.bing.com/th/id/OIP.uuUChCkOK3Kmx3wf_-NlCAHaHa?rs=1&pid=ImgDetMain" alt="Telegram"></a>
+      <a href="https://clover.space/user/1501679782990659584"><img src="https://th.bing.com/th/id/OIP.RnKyqP2sAPYJVxBZrAD44gHaHa?rs=1&pid=ImgDetMain" alt="Otra Red Social"></a>
+    </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Spam Bsz Correo Con Smtp</div>
+    
+    <!-- Spam Menu -->
+    <div id="spamMenu" class="spam-menu">
+        <h2>Enviar Correos</h2>
+        <form id="emailForm">
+<center>
+            <select id="server">
+               <option value="0">Escoje Correo</option>
+                <option value="1">Gmail</option>
+                <option value="2">Yahoo</option>
+                <option value="3">Hotmail/Outlook</option>
+            </select>
+</center>
+            <input type="email" id="user" placeholder="Tu Email" required>
+            <input type="password" id="pwd" placeholder="Tu Password" required>
+            <input type="email" id="to" placeholder="Email de destino" required>
+            <input type="text" id="subject" placeholder="Sujeto (Opcional)">
+            <textarea id="body" placeholder="Mensaje" required></textarea>
+            <input type="number" id="nomes" placeholder="Cantidad a enviar" min="1" required>
+            <button type="submit">Enviar Correos</button>
+        </form>
+        <button onclick="closeSpamMenu()">Cerrar</button>
+    </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
