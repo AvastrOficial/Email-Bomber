@@ -55,9 +55,3 @@ $ python2 Bomb.py
 
 Ovbiamente si mandamos mucha cantidad de mensajes es posible que Gmail lleve los mensajes para spam por eso para poder evitar que lleguen a spam tenemos que poner un sujeto y un mensaje algo largo para que lleguen bien.
 
-
-# Canal de YT
-
-https://youtube.com/@RIP-Network
-
-https://youtube.com/@RIPNetwork
