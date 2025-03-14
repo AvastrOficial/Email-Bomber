@@ -1,0 +1,149 @@
+          body {
+            font-family: 'Courier New', monospace;
+            background-color: #0d0d0d;
+            color: #33ff33;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #111;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #33ff33;
+        }
+        .nav {
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a, .nav button {
+            color: #33ff33;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .nav a:hover, .nav button:hover, .nav a.active {
+            color: cyan;
+        }
+        .container {
+           display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(13, 13, 13, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(51, 255, 51, 0.5);
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #111;
+            border-top: 2px solid #33ff33;
+        }
+        .spam-menu {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #1a1a1a;
+            padding: 20px;
+            box-shadow: 0 0 10px #33ff33;
+            border-radius: 10px;
+            width: 400px;
+        }
+        .spam-menu button {
+            background-color: #33ff33;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+        }
+        .spam-menu button:hover {
+            background-color: cyan;
+        }
+      
+      /* Estilos para placeholder */
+#emailForm input::placeholder, 
+#emailForm textarea::placeholder {
+    color: #66ff66;
+}
+
+/* Efecto al enfocar */
+#emailForm input:focus, 
+#emailForm textarea:focus, 
+#emailForm select:focus {
+    outline: none;
+    border-color: cyan;
+    box-shadow: 0 0 8px cyan;
+}
+
+/* Estilo especial para el select */
+#emailForm select {
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+      
+      /* Estilos generales para el formulario */
+
+
+/* Estilos para inputs, textarea y select */
+#emailForm input, 
+#emailForm select, 
+#emailForm textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #33ff33;
+    background-color: #0d0d0d;
+    color: #33ff33;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+      
+      
+        .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px; /* Ajusta el ancho según el tamaño de tus íconos */
+  height: 40px; /* Ajusta la altura según el tamaño de tus íconos */
+  border-radius: 50%; /* Hace que los íconos sean circulares */
+  border: 2px solid #333; /* Borde de 2px sólido de color gris oscuro (#333) */
+  padding: 5px; /* Opcional: agrega un poco de espacio alrededor de los íconos */
+  box-sizing: border-box; /* Hace que el padding no afecte el tamaño total */
+  transition: transform 0.3s ease-in-out; /* Animación al pasar el cursor */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Cambia el tamaño al pasar el cursor */
+}
+     
